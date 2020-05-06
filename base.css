@@ -9,6 +9,17 @@
 *:after {
   box-sizing: inherit;
 }
+#joke img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+#joke img.top:hover {
+  opacity:0;
+}
 html {
   font-size: 14px;
   -webkit-text-size-adjust: 100%;
@@ -53,7 +64,7 @@ h1 {
   margin-bottom: 0;
 }
 h2 {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 3rem;
   letter-spacing: 0.25em;
 }
